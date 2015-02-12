@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9428D9AC-0D4D-4CFD-B868-95BD9DA2D5CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Esuli.Base</RootNamespace>
+    <AssemblyName>Esuli.Base</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Esuli\Base\Collections\IIntId.cs" />
+    <Compile Include="src\Esuli\Base\Enumerators\CustomSelectorEnumerator.cs" />
+    <Compile Include="src\Esuli\Base\Enumerators\IntRangeEnumerator.cs" />
+    <Compile Include="src\Esuli\Base\Enumerators\MergedEnumerators_Titem.cs" />
+    <Compile Include="src\Esuli\Base\Comparers\LongComparer.cs" />
+    <Compile Include="src\Esuli\Base\Comparers\IntComparer.cs" />
+    <Compile Include="src\Esuli\Base\Comparers\OrdinalStringComparer.cs" />
+    <Compile Include="src\Esuli\Base\Enumerators\EnumeratorWithJump_Titem.cs" />
+    <Compile Include="src\Esuli\Base\Constants.cs" />
+    <Compile Include="src\Esuli\Base\IO\FileInfoStreamEnumerator.cs" />
+    <Compile Include="src\Esuli\Base\IO\Sort\MWayMergeSort_Titem.cs" />
+    <Compile Include="src\Esuli\Base\IO\Storage\Constants.cs" />
+    <Compile Include="src\Esuli\Base\IO\Storage\ISequentiallyWriteableStorage_Tobject.cs" />
+    <Compile Include="src\Esuli\Base\IO\Storage\ReadOnlyFixedSizeStorage_Tobject.cs" />
+    <Compile Include="src\Esuli\Base\IO\Storage\ReadOnlyStorage_Tobject.cs" />
+    <Compile Include="src\Esuli\Base\IO\Storage\SequentialWriteOnlyFixedSizeStorage_Tobject_TobjectSerialization.cs" />
+    <Compile Include="src\Esuli\Base\IO\Storage\SequentialWriteOnlyStorage_Tobject.cs" />
+    <Compile Include="src\Esuli\Base\IO\Storage\StorageMerge_Tobject.cs" />
+    <Compile Include="src\Esuli\Base\IO\Storage\Utility.cs" />
+    <Compile Include="src\Esuli\Base\IO\StreamEnumeratorEnumerator_Titem.cs" />
+    <Compile Include="src\Esuli\Base\IO\PairSerialization_Tfirst_Tsecond.cs" />
+    <Compile Include="src\Esuli\Base\IO\Sort\ParallelMWayMergeSort_Titem.cs" />
+    <Compile Include="src\Esuli\Base\IO\StreamEnumerator_Titem.cs" />
+    <Compile Include="src\Esuli\Base\Enumerators\IEnumeratorWithJump_Titem.cs" />
+    <Compile Include="src\Esuli\Base\IO\IObjectSerialization_Tobject.cs" />
+    <Compile Include="src\Esuli\Base\Comparers\KeyValuePairKeyReverseExternalComparer_Tkey_Tvalue.cs" />
+    <Compile Include="src\Esuli\Base\Comparers\KeyValuePairKeyExternalComparer_Tkey_Tvalue.cs" />
+    <Compile Include="src\Esuli\Base\IO\VariableByteCoding.cs" />
+    <Compile Include="src\Esuli\Base\IO\SequentialIntSerialization.cs" />
+    <Compile Include="src\Esuli\Base\Collections\HeapUtils_Titem.cs" />
+    <Compile Include="src\Esuli\Base\Collections\Heap_Titem.cs" />
+    <Compile Include="src\Esuli\Base\IO\IFixedSizeObjectSerialization_Titem.cs" />
+    <Compile Include="src\Esuli\Base\Comparers\KeyValuePairKeyReverseComparer_Tkey_Tvalue.cs" />
+    <Compile Include="src\Esuli\Base\Enumerators\IntEnumeratorOffset.cs" />
+    <Compile Include="src\Esuli\Base\IO\ISequentialObjectSerialization_Tobject.cs" />
+    <Compile Include="src\Esuli\Base\Comparers\KeyValuePairKeyComparer_Tkey_Tvalue.cs" />
+    <Compile Include="src\Esuli\Base\IO\SequentialLongSerialization.cs" />
+    <Compile Include="src\Esuli\Base\IO\StringSerialization.cs" />
+    <Compile Include="src\Esuli\Base\IO\TypeSerialization.cs" />
+    <Compile Include="src\Esuli\Base\UI\Question.cs" />
+    <Compile Include="src\Esuli\Base\IO\SequentialStringSerialization.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\GPLHeader.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
